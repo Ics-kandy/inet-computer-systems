@@ -127,7 +127,14 @@
             opacity: 0.9; 
         }
 
-        /* Images and Map */
+        .map-container {
+            margin-top: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            height: 350px;
+        }
+
         .promo-img {
             width: 100%;
             max-width: 350px;
@@ -140,14 +147,6 @@
             margin-right: auto;
         }
 
-        .map-container {
-            margin-top: 20px;
-            border-radius: 15px;
-            overflow: hidden;
-            border: 1px solid #ddd;
-            height: 300px;
-        }
-
         .footer { 
             text-align: center; 
             margin-top: 35px; 
@@ -157,7 +156,6 @@
             padding-top: 20px; 
         }
 
-        /* Mobile View Fix */
         @media (max-width: 600px) {
             .header-container { flex-direction: column; text-align: center; }
             .logo-img { margin-right: 0; margin-bottom: 15px; }
@@ -190,13 +188,21 @@
 
                 <h3>About Us</h3>
                 <div class="about-text">
-                    <p>Looking for the most reliable computer repair in Digana? INET COMPUTER SYSTEMS, located at Digana Village Junction, has been providing high-quality technical solutions since 2006. With over 20 years of industry experience, we specialize in professional laptop repairs and modern tech services.</p>
+                    <p>INET COMPUTER SYSTEMS, located at Digana Village Junction, has been providing high-quality technical solutions since 2006. We specialize in professional laptop repairs, web development, and modern tech services.</p>
                     <p>දිගන ප්‍රදේශයේ වසර 20ක පළපුරුදු විශ්වාසනීයම පරිගණක අලුත්වැඩියා සේවාව! ඕනෑම පරිගණක ගැටලුවකදී සහනදායී මිලකට ඉහළම ප්‍රමිතියෙන් යුතු සේවාවක් ලබාදීම අපගේ අරමුණයි.</p> 
                 </div>
 
                 <h3>Our Location</h3>
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.597621453265!2d80.72772867498664!3d7.296112271196928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMTcnNDYuMCJOIDgwwrA0MydiNy43IkU!5e0!3m2!1sen!2slk!4v1714032190123!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        style="border:0" 
+                        src="https://www.google.com/maps/embed/v1/place?key=REPLACE_WITH_YOUR_GOOGLE_MAPS_API_KEY&q=7.296112271196928,80.72991729103363" 
+                        allowfullscreen>
+                    </iframe>
+                    <iframe src="https://maps.google.com/maps?q=7.296112,80.729917&z=15&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
 
