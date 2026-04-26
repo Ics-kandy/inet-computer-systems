@@ -9,7 +9,9 @@
     <meta name="keywords" content="Computer Shop Digana, Laptop repair Kandy, Computer repair Digana, CCTV installation Kundasale, Web developing Kandy, Social media marketing Sri Lanka, Networking Kengalla, INET Computer Systems, Computer classes Digana, Wattegama, Teldeniya, Madawala, Balagolla, Menikhinna">
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
-        .container { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); width: 100%; max-width: 900px; border-top: 10px solid #00adef; }
+        
+        .container { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); width: 100%; max-width: 1200px; border-top: 10px solid #00adef; }
+        
         .header-container { display: flex; align-items: center; padding-bottom: 20px; border-bottom: 2px solid #eee; margin-bottom: 25px; }
         .logo-img { width: 80px; height: auto; margin-right: 20px; border-radius: 8px; }
         .text-container h1 { margin: 0; font-size: 26px; color: #333; text-transform: uppercase; letter-spacing: 1px; }
@@ -17,11 +19,32 @@
         .main-content { display: flex; gap: 40px; flex-wrap: wrap; }
         .column { flex: 1; min-width: 320px; }
         .column h3 { border-bottom: 2px solid #00adef; display: inline-block; padding-bottom: 5px; color: #444; font-size: 20px; margin-top: 0; margin-bottom: 15px; }
-        ul { list-style-type: none; padding: 0; }
-        ul li { margin-bottom: 12px; }
-        ul li a { text-decoration: none; color: #444; font-size: 15px; transition: 0.3s; display: block; }
-        ul li a:hover { color: #00adef; transform: translateX(10px); }
-        .about-text { font-size: 14px; line-height: 1.7; color: #555; text-align: justify; background: #f9f9f9; padding: 15px; border-radius: 10px; }
+        
+        /* Service Buttons CSS */
+        .services-list { margin-top: 10px; }
+        .service-link {
+            display: block;
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-left: 5px solid #00adef;
+            padding: 12px 15px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .service-link:hover {
+            background: #00adef;
+            color: white;
+            transform: translateX(8px);
+            box-shadow: 0 5px 15px rgba(0,173,239,0.3);
+        }
+        
+        .about-text { font-size: 15px; line-height: 1.8; color: #555; text-align: justify; background: #f9f9f9; padding: 20px; border-radius: 10px; }
         .btn { display: flex; align-items: center; justify-content: center; padding: 14px; margin: 12px 0; text-decoration: none; color: white; border-radius: 10px; font-weight: bold; transition: 0.3s; font-size: 15px; }
         .whatsapp { background: #25D366; }
         .facebook { background: #1877F2; }
@@ -29,8 +52,8 @@
         .directions { background: #4285F4; margin-top: 10px; }
         .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); opacity: 0.9; }
         .map-container { margin-top: 20px; border-radius: 15px; overflow: hidden; border: 1px solid #ddd; height: 300px; }
-        .promo-img { width: 100%; max-width: 350px; height: auto; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-top: 20px; display: block; margin-left: auto; margin-right: auto; }
-        .footer { text-align: center; margin-top: 35px; font-size: 13px; color: #aaa; border-top: 1px solid #eee; padding-top: 20px; }
+        .promo-img { width: 100%; max-width: 400px; height: auto; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-top: 20px; display: block; margin-left: auto; margin-right: auto; }
+        .footer { text-align: center; margin-top: 35px; font-size: 14px; color: #aaa; border-top: 1px solid #eee; padding-top: 20px; }
         @media (max-width: 600px) { .header-container { flex-direction: column; text-align: center; } .logo-img { margin-right: 0; margin-bottom: 15px; } .column { min-width: 100%; } }
     </style>
 </head>
@@ -46,14 +69,16 @@
         <div class="main-content">
             <div class="column">
                 <h3>Our Services</h3>
-                <ul>
-                    <li><a href="http://inetcomputersystem.blogspot.com/2025/05/desktop-and-laptop-repair-digana.html" target="_blank">✔ Laptop & Desktop Repair</a></li>                    
-                    <li><a href="http://inetcomputersystem.blogspot.com/2025/05/cctv-camera-installation-digana.html" target="_blank">✔ Security Systems (CCTV)</a></li>
-                    <li><a href="http://inetcomputersystem.blogspot.com/2013/09/web-developing-hosting-digana-kandy.html" target="_blank">✔ Web Developing</a></li>
-                    <li><a href="#">✔ Social Media Marketing</a></li>
-                    <li><a href="http://inetcomputersystem.blogspot.com/2025/05/networking-wifi-solutions-digana.html" target="_blank">✔ Networking & WiFi Solutions</a></li>
-                    <li><a href="http://inetcomputersystem.blogspot.com/2019/10/computer-classes-digana.html" target="_blank">✔ ICS Computer Courses</a></li>
-                </ul>
+                
+                <div class="services-list">
+                    <a href="http://inetcomputersystem.blogspot.com/2025/05/desktop-and-laptop-repair-digana.html" target="_blank" class="service-link">✔ Laptop & Desktop Repair</a> 
+                    <a href="http://inetcomputersystem.blogspot.com/2025/05/cctv-camera-installation-digana.html" target="_blank" class="service-link">✔ Security Systems (CCTV)</a>
+                    <a href="http://inetcomputersystem.blogspot.com/2013/09/web-developing-hosting-digana-kandy.html" target="_blank" class="service-link">✔ Web Developing</a>
+                    <a href="#" class="service-link">✔ Social Media Marketing</a>
+                    <a href="http://inetcomputersystem.blogspot.com/2025/05/networking-wifi-solutions-digana.html" target="_blank" class="service-link">✔ Networking & WiFi Solutions</a>
+                    <a href="http://inetcomputersystem.blogspot.com/2019/10/computer-classes-digana.html" target="_blank" class="service-link">✔ ICS Computer Courses</a>
+                </div>
+
                 <h3>About Us</h3>
                 <div class="about-text">
                     <p>Looking for the best <b>Computer Shop in Digana</b>? INET COMPUTER SYSTEMS provides expert <b>laptop repair</b>, <b>CCTV</b>, and <b>Web Developing</b> services since 2006.</p>
@@ -62,9 +87,9 @@
                 </div>
                 <h3>Our Location</h3>
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.030467557454!2d80.72991729103363!3d7.296112271196928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMTcnNDYuMCJOIDgwwrA0Myc0Ny43IkU!5e0!3m2!1sen!2slk!4v1619356394500!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15829.136009405626!2d80.6974267!3d7.291771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3662664981593%3A0x8aa86ce7b0c9fc63!2sINET%20COMPUTER%20SYSTEMS!5e0!3m2!1sen!2slk!4v1714000000000!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=7.296112,80.729917" target="_blank" class="btn directions">Get Directions (පාර පෙන්වන්න)</a>
+                <a href="https://maps.app.goo.gl/YourActualMapLinkHere" target="_blank" class="btn directions">Get Directions (පාර පෙන්වන්න)</a>
             </div>
             <div class="column">
                 <h3>Get In Touch</h3>
