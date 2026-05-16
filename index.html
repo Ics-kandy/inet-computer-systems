@@ -7,18 +7,25 @@
     <title>INET Computer Systems | Laptop Repair & Web Developing Digana Kandy</title>
     <meta name="description" content="Professional Computer & Laptop Repair, CCTV, Networking, and Web Developing in Digana, Kengalla, Kundasale, Kandy, Wattegama, and Teldeniya. Over 20 years of expert service.">
     <meta name="keywords" content="Computer Shop Digana, Laptop repair Kandy, Computer repair Digana, CCTV installation Kundasale, Web developing Kandy, Social media marketing Sri Lanka, Networking Kengalla, INET Computer Systems, Computer classes Digana, Wattegama, Teldeniya, Madawala, Balagolla, Menikhinna">
+    
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', 'Segoe UI', sans-serif; }
+        body { background: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
         
         .container { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); width: 100%; max-width: 1200px; border-top: 10px solid #00adef; }
         
         .header-container { display: flex; align-items: center; padding-bottom: 20px; border-bottom: 2px solid #eee; margin-bottom: 25px; }
         .logo-img { width: 80px; height: auto; margin-right: 20px; border-radius: 8px; }
-        .text-container h1 { margin: 0; font-size: 26px; color: #333; text-transform: uppercase; letter-spacing: 1px; }
+        .text-container h1 { margin: 0; font-size: 26px; color: #333; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
         .text-container p { margin: 0; font-size: 16px; color: #00adef; font-weight: bold; }
+        
         .main-content { display: flex; gap: 40px; flex-wrap: wrap; }
         .column { flex: 1; min-width: 320px; }
-        .column h3 { border-bottom: 2px solid #00adef; display: inline-block; padding-bottom: 5px; color: #444; font-size: 20px; margin-top: 0; margin-bottom: 15px; }
+        .column h3 { border-bottom: 2px solid #00adef; display: inline-block; padding-bottom: 5px; color: #444; font-size: 20px; margin-top: 25px; margin-bottom: 15px; font-weight: 600; }
+        .column h3:first-child { margin-top: 0; }
         
         /* Service Buttons CSS */
         .services-list { margin-top: 10px; }
@@ -27,7 +34,7 @@
             background: #f8f9fa;
             border: 1px solid #e0e0e0;
             border-left: 5px solid #00adef;
-            padding: 12px 15px;
+            padding: 13px 15px;
             margin-bottom: 12px;
             border-radius: 8px;
             text-decoration: none;
@@ -44,21 +51,42 @@
             box-shadow: 0 5px 15px rgba(0,173,239,0.3);
         }
         
-        .about-text { font-size: 15px; line-height: 1.8; color: #555; text-align: justify; background: #f9f9f9; padding: 20px; border-radius: 10px; }
+        /* Special highlight color for registration tab */
+        .registration-link {
+            border-left: 5px solid #ff5722;
+        }
+        .registration-link:hover {
+            background: #ff5722;
+            box-shadow: 0 5px 15px rgba(255,87,34,0.3);
+        }
+        
+        .about-text { font-size: 15px; line-height: 1.8; color: #555; text-align: justify; background: #f9f9f9; padding: 20px; border-radius: 10px; margin-bottom: 15px; }
+        .about-text p { margin-bottom: 10px; }
+        .about-text p:last-child { margin-bottom: 0; }
+        
+        .contact-info { font-size: 16px; color: #444; margin-bottom: 10px; font-weight: 600; }
+        
         .btn { display: flex; align-items: center; justify-content: center; padding: 14px; margin: 12px 0; text-decoration: none; color: white; border-radius: 10px; font-weight: bold; transition: 0.3s; font-size: 15px; }
         .whatsapp { background: #25D366; }
         .facebook { background: #1877F2; }
         .blog { background: #ff5722; }
         .directions { background: #4285F4; margin-top: 10px; }
         .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); opacity: 0.9; }
+        
         .map-container { margin-top: 20px; border-radius: 15px; overflow: hidden; border: 1px solid #ddd; height: 300px; }
         .promo-img { width: 100%; max-width: 400px; height: auto; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-top: 20px; display: block; margin-left: auto; margin-right: auto; }
         .footer { text-align: center; margin-top: 35px; font-size: 14px; color: #aaa; border-top: 1px solid #eee; padding-top: 20px; }
-        @media (max-width: 600px) { .header-container { flex-direction: column; text-align: center; } .logo-img { margin-right: 0; margin-bottom: 15px; } .column { min-width: 100%; } }
+        
+        @media (max-width: 768px) { 
+            .header-container { flex-direction: column; text-align: center; } 
+            .logo-img { margin-right: 0; margin-bottom: 15px; } 
+            .column { min-width: 100%; } 
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Header Section -->
         <div class="header-container">
             <img src="oemlogo.bmp" alt="INET Computer Systems Logo" class="logo-img" onerror="this.style.display='none'">
             <div class="text-container">
@@ -66,10 +94,12 @@
                 <p>Tech Support, Web Developing & ICS Computer Courses</p>
             </div>
         </div>
+        
+        <!-- Main Content Section -->
         <div class="main-content">
+            <!-- Left Column: Services & About -->
             <div class="column">
                 <h3>Our Services</h3>
-                
                 <div class="services-list">
                     <a href="http://inetcomputersystem.blogspot.com/2025/05/desktop-and-laptop-repair-digana.html" target="_blank" class="service-link">✔ Laptop & Desktop Repair</a> 
                     <a href="http://inetcomputersystem.blogspot.com/2025/05/cctv-camera-installation-digana.html" target="_blank" class="service-link">✔ Security Systems (CCTV)</a>
@@ -77,6 +107,9 @@
                     <a href="#" class="service-link">✔ Social Media Marketing</a>
                     <a href="http://inetcomputersystem.blogspot.com/2025/05/networking-wifi-solutions-digana.html" target="_blank" class="service-link">✔ Networking & WiFi Solutions</a>
                     <a href="http://inetcomputersystem.blogspot.com/2019/10/computer-classes-digana.html" target="_blank" class="service-link">✔ ICS Computer Courses</a>
+                    
+                    <!-- අලුතින්ම එකතු කළ Registration Tab එක (කැපිලා පේන්න තැඹිලි පාටින් හැදුවා) -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiCfrGB3HwuMY-mqkOdEZrdyQbHoLzHDfgsBAfTeGk4Mnv6w/viewform" target="_blank" class="service-link registration-link">✔ Computer Class - Student Registration</a>
                 </div>
 
                 <h3>About Us</h3>
@@ -85,24 +118,31 @@
                     <p>දිගන ප්‍රදේශයේ වසර 20ක පළපුරුදු විශ්වාසනීයම පරිගණක අලුත්වැඩියා සේවාව! ඕනෑම පරිගණක ගැටලුවකදී සහනදායී මිලකට ඉහළම ප්‍රමිතියෙන් යුතු සේවාවක් ලබාදීම අපගේ අරමුණයි.</p> 
                     <p>Serving: <b>Digana, Kengalla, Kundasale, Madawala, Kandy, Wattegama, Teldeniya, Balagolla, Menikhinna</b></p>
                 </div>
+                
                 <h3>Our Location</h3>
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15829.136009405626!2d80.6974267!3d7.291771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3662664981593%3A0x8aa86ce7b0c9fc63!2sINET%20COMPUTER%20SYSTEMS!5e0!3m2!1sen!2slk!4v1714000000000!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <a href="https://maps.app.goo.gl/YourActualMapLinkHere" target="_blank" class="btn directions">Get Directions (පාර පෙන්වන්න)</a>
+                <a href="https://maps.app.goo.gl/3ae3662664981593" target="_blank" class="btn directions">Get Directions (පාර පෙන්වන්න)</a>
             </div>
+            
+            <!-- Right Column: Get In Touch -->
             <div class="column">
                 <h3>Get In Touch</h3>
-                <p>📍 Digana Village Junction, Digana</p>
-                <p>📞 077 23 63 599</p>
+                <p class="contact-info">📍 Digana Village Junction, Digana</p>
+                <p class="contact-info">📞 077 23 63 599</p>
+                
                 <a href="https://wa.me/94772363599" class="btn whatsapp" target="_blank">Message on WhatsApp</a>
                 <a href="https://web.facebook.com/ICS.Kengalla" class="btn facebook" target="_blank">Official Facebook Page</a>
                 <a href="http://inetcomputersystem.blogspot.com/" class="btn blog" target="_blank">Visit Our Blog Site</a>
+                
                 <div style="text-align: center;">
                     <img src="technician.jpg" alt="Computer Repair Technician Digana" class="promo-img" onerror="this.style.display='none'">
                 </div>
             </div>
         </div>
+        
+        <!-- Footer -->
         <div class="footer">© 2026 INET Computer Systems - Trusted for over 20 Years</div>
     </div>
 </body>
