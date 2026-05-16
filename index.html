@@ -28,7 +28,7 @@
         .column h3:first-child { margin-top: 0; }
         
         /* Service Buttons CSS */
-        .services-list { margin-top: 10px; }
+        .services-list { margin-top: 10px; display: flex; flex-direction: column; }
         .service-link {
             display: block;
             background: #f8f9fa;
@@ -51,13 +51,16 @@
             box-shadow: 0 5px 15px rgba(0,173,239,0.3);
         }
         
-        /* Special highlight color for registration tab */
+        /* Registration ბටන් එක කොට කරලා, දකුණු කෙළවරේ රඳවා ගන්න හැදූ CSS */
         .registration-link {
             border-left: 5px solid #ff5722;
+            margin-left: 45px; /* වම් පැත්තෙන් අඟලක් ඇතුළට කළා */
+            display: block; /* බටන් එකක් විදිහටම තියාගන්න */
         }
         .registration-link:hover {
             background: #ff5722;
             box-shadow: 0 5px 15px rgba(255,87,34,0.3);
+            transform: translateX(4px); /* Hover වෙද්දී එළියට පනින්නේ නැති වෙන්න චලනය අඩු කළා */
         }
         
         .about-text { font-size: 15px; line-height: 1.8; color: #555; text-align: justify; background: #f9f9f9; padding: 20px; border-radius: 10px; margin-bottom: 15px; }
@@ -81,6 +84,8 @@
             .header-container { flex-direction: column; text-align: center; } 
             .logo-img { margin-right: 0; margin-bottom: 15px; } 
             .column { min-width: 100%; } 
+            .registration-link { margin-left: 0; } /* Mobile වලදී ලස්සනට full width පෙනේ */
+            .registration-link:hover { transform: translateX(8px); }
         }
     </style>
 </head>
@@ -108,7 +113,7 @@
                     <a href="http://inetcomputersystem.blogspot.com/2025/05/networking-wifi-solutions-digana.html" target="_blank" class="service-link">✔ Networking & WiFi Solutions</a>
                     <a href="http://inetcomputersystem.blogspot.com/2019/10/computer-classes-digana.html" target="_blank" class="service-link">✔ ICS Computer Courses</a>
                     
-                    <!-- අලුතින්ම එකතු කළ Registration Tab එක (කැපිලා පේන්න තැඹිලි පාටින් හැදුවා) -->
+                    <!-- කොට බටන් එකක් විදිහට අනිත් ඒවායේ දකුණු line එකටම කෙළවර වන Registration බටන් එක -->
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiCfrGB3HwuMY-mqkOdEZrdyQbHoLzHDfgsBAfTeGk4Mnv6w/viewform" target="_blank" class="service-link registration-link">✔ Computer Class - Student Registration</a>
                 </div>
 
