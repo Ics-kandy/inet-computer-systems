@@ -362,8 +362,8 @@ nav a {
     /* Card Image */
     .service-card img {
         display: block;
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         max-height: 380px;
         object-fit: cover;
         object-position: center;
